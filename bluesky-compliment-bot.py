@@ -19,11 +19,13 @@ VERBS = [
     "sparkle", "shine", "glow", "shimmer", "resonate",
     "beam", "sizzle", "create joy", "give hope", "lift people up",
     "exist", "function", "operate", "think", "transcend",
-    "bloom", "dance", "charm the universe", 
-    "illuminate", "flourish", "soar", "thrive", "elevate", "inspire",  
-     "captivate", "swagger",
-    "show empathy", "collaborate", "dominate", "crush", "exist in 4D", 
-    "conquer", "serve face", "slay", "matter", "ignore physics", "change outcomes just by existing", "make impossible things happen", "turn thoughts into reality", "manifest dreams accidentally", "spontaneously generate hope", "produce joy", "radiate possibilities", "emit potential", "leak creativity", "ooze inspiration", "secrete wisdom", "exude competence", "project confidence accidentally", "befriend abstract ideas"
+    "bloom", "dance", "charm the universe", "illuminate", "flourish", "soar", "thrive", "elevate", 
+    "inspire", "captivate", "swagger", "show empathy", "collaborate", "dominate", "crush", 
+    "exist in 4D", "conquer", "serve face", "slay", "matter", "ignore physics", 
+    "change outcomes just by existing", "make impossible things happen", "turn thoughts into reality", 
+    "manifest dreams accidentally", "spontaneously generate hope", "produce joy", "radiate possibilities", 
+    "emit potential", "leak creativity", "ooze inspiration", "secrete wisdom", "exude competence", 
+    "project confidence accidentally", "befriend abstract ideas"
 ]
 
 ADJECTIVES = [
@@ -59,7 +61,18 @@ NOUNS = [
     "treehouse", "crystal", "vinyl record", "telescope", "windmill", "coffee mug",
     "blanket", "carousel", "harmonica", "pottery", "pillow fort", "waterfall",
     "hammock", "quilt", "honeycomb", "terrarium", "music box", "snow globe",
-    "cake", "puzzle", "hot air balloon", "candle", "butterfly", "lullaby", "cryptid", "menace", "legend", "icon", "wizard", "oracle", "sage", "champion", "hero", "warrior", "knight", "dragon", "phoenix", "unicorn", "pegasus", "griffin", "sphinx", "kraken", "leviathan", "titan", "colossus", "behemoth", "chimera", "hydra", "mongoose", "capybara", "otter", "raccoon", "crow", "raven", "owl", "hawk", "falcon", "eagle", "wolf", "fox", "bear", "lion", "tiger", "panther", "leopard", "jaguar", "lynx", "bobcat", "cheetah", "puma", "octopus", "jellyfish", "mantis shrimp", "axolotl", "tardigrade", "platypus", "narwhal", "dolphin", "whale", "shark", "seal", "walrus", "penguin", "flamingo", "peacock", "swan", "hummingbird", "kingfisher", "tortoise", "gecko", "chameleon", "iguana", "komodo dragon", "crocodile", "alligator", "salamander", "newt", "frog", "toad", "bee", "butterfly", "moth", "dragonfly", "firefly", "ladybug", "beetle", "ant", "termite", "spider", "scorpion", "crab", "lobster", "shrimp", "squid", "cuttlefish", "nautilus", "snail", "slug", "worm", "caterpillar", "chrysalis", "cocoon", "puppy", "kitten", "bunny", "duckling", "cup of tea", "Saturday morning cartoon"
+    "cake", "puzzle", "hot air balloon", "candle", "butterfly", "lullaby", "cryptid", 
+    "menace", "legend", "icon", "wizard", "oracle", "sage", "champion", "hero", "warrior", 
+    "knight", "dragon", "phoenix", "unicorn", "pegasus", "griffin", "sphinx", "kraken", "leviathan", 
+    "titan", "colossus", "behemoth", "chimera", "hydra", "mongoose", "capybara", "otter", "raccoon", 
+    "crow", "raven", "owl", "hawk", "falcon", "eagle", "wolf", "fox", "bear", "lion", "tiger", "panther", 
+    "leopard", "jaguar", "lynx", "bobcat", "cheetah", "puma", "octopus", "jellyfish", "mantis shrimp", 
+    "axolotl", "tardigrade", "platypus", "narwhal", "dolphin", "whale", "shark", "seal", "walrus", 
+    "penguin", "flamingo", "peacock", "swan", "hummingbird", "kingfisher", "tortoise", "gecko", "chameleon", 
+    "iguana", "komodo dragon", "crocodile", "alligator", "salamander", "newt", "frog", "toad", "bee", 
+    "butterfly", "moth", "dragonfly", "firefly", "ladybug", "beetle", "ant", "termite", "spider", "scorpion", 
+    "crab", "lobster", "shrimp", "squid", "cuttlefish", "nautilus", "snail", "slug", "worm", "caterpillar", 
+    "chrysalis", "cocoon", "puppy", "kitten", "bunny", "duckling", "cup of tea", "Saturday morning cartoon"
 ]
 
 CATEGORIES = [
@@ -91,8 +104,8 @@ BODY_PARTS_TRAITS = [
     "curiosity", "patience", "courage", "integrity", "spontaneity",
     "wisdom", "imagination", "intuition", "spirit", "heart", "soul",
     "smile", "energy", "perspective", "outlook", "approach to life",
-    "resting face", "sense of humour",
-    "energy", "unfiltered thoughts", "spite reserves", "audacity", "willpower", "determination", "unique skills"
+    "resting face", "sense of humour", "energy", "unfiltered thoughts", 
+    "spite reserves", "audacity", "willpower", "determination", "unique skills"
 ]
 
 ABSURD_ACHIEVEMENTS = [
