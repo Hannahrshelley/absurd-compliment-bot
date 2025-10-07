@@ -19,13 +19,11 @@ VERBS = [
     "sparkle", "shine", "glow", "shimmer", "resonate",
     "beam", "sizzle", "create joy", "give hope", "lift people up",
     "exist", "function", "operate", "think", "transcend",
-    "bloom", "dance", "charm the universe", "illuminate", "flourish", "soar", "thrive", "elevate", 
-    "inspire", "captivate", "swagger", "show empathy", "collaborate", "dominate", "crush", 
-    "exist in 4D", "conquer", "serve face", "slay", "matter", "ignore physics", 
-    "change outcomes just by existing", "make impossible things happen", "turn thoughts into reality", 
-    "manifest dreams accidentally", "spontaneously generate hope", "produce joy", "radiate possibilities", 
-    "emit potential", "leak creativity", "ooze inspiration", "secrete wisdom", "exude competence", 
-    "project confidence accidentally", "befriend abstract ideas"
+    "bloom", "dance", "charm the universe", 
+    "illuminate", "flourish", "soar", "thrive", "elevate", "inspire",  
+     "captivate", "swagger",
+    "show empathy", "collaborate", "dominate", "crush", "exist in 4D", 
+    "conquer", "serve face", "slay", "matter", "ignore physics", "change outcomes just by existing", "make impossible things happen", "turn thoughts into reality", "manifest dreams accidentally", "spontaneously generate hope", "produce joy", "radiate possibilities", "emit potential", "leak creativity", "ooze inspiration", "secrete wisdom", "exude competence", "project confidence accidentally", "befriend abstract ideas"
 ]
 
 ADJECTIVES = [
@@ -61,18 +59,7 @@ NOUNS = [
     "treehouse", "crystal", "vinyl record", "telescope", "windmill", "coffee mug",
     "blanket", "carousel", "harmonica", "pottery", "pillow fort", "waterfall",
     "hammock", "quilt", "honeycomb", "terrarium", "music box", "snow globe",
-    "cake", "puzzle", "hot air balloon", "candle", "butterfly", "lullaby", "cryptid", 
-    "menace", "legend", "icon", "wizard", "oracle", "sage", "champion", "hero", "warrior", 
-    "knight", "dragon", "phoenix", "unicorn", "pegasus", "griffin", "sphinx", "kraken", "leviathan", 
-    "titan", "colossus", "behemoth", "chimera", "hydra", "mongoose", "capybara", "otter", "raccoon", 
-    "crow", "raven", "owl", "hawk", "falcon", "eagle", "wolf", "fox", "bear", "lion", "tiger", "panther", 
-    "leopard", "jaguar", "lynx", "bobcat", "cheetah", "puma", "octopus", "jellyfish", "mantis shrimp", 
-    "axolotl", "tardigrade", "platypus", "narwhal", "dolphin", "whale", "shark", "seal", "walrus", 
-    "penguin", "flamingo", "peacock", "swan", "hummingbird", "kingfisher", "tortoise", "gecko", "chameleon", 
-    "iguana", "komodo dragon", "crocodile", "alligator", "salamander", "newt", "frog", "toad", "bee", 
-    "butterfly", "moth", "dragonfly", "firefly", "ladybug", "beetle", "ant", "termite", "spider", "scorpion", 
-    "crab", "lobster", "shrimp", "squid", "cuttlefish", "nautilus", "snail", "slug", "worm", "caterpillar", 
-    "chrysalis", "cocoon", "puppy", "kitten", "bunny", "duckling", "cup of tea", "Saturday morning cartoon"
+    "cake", "puzzle", "hot air balloon", "candle", "butterfly", "lullaby", "cryptid", "menace", "legend", "icon", "wizard", "oracle", "sage", "champion", "hero", "warrior", "knight", "dragon", "phoenix", "unicorn", "pegasus", "griffin", "sphinx", "kraken", "leviathan", "titan", "colossus", "behemoth", "chimera", "hydra", "mongoose", "capybara", "otter", "raccoon", "crow", "raven", "owl", "hawk", "falcon", "eagle", "wolf", "fox", "bear", "lion", "tiger", "panther", "leopard", "jaguar", "lynx", "bobcat", "cheetah", "puma", "octopus", "jellyfish", "mantis shrimp", "axolotl", "tardigrade", "platypus", "narwhal", "dolphin", "whale", "shark", "seal", "walrus", "penguin", "flamingo", "peacock", "swan", "hummingbird", "kingfisher", "tortoise", "gecko", "chameleon", "iguana", "komodo dragon", "crocodile", "alligator", "salamander", "newt", "frog", "toad", "bee", "butterfly", "moth", "dragonfly", "firefly", "ladybug", "beetle", "ant", "termite", "spider", "scorpion", "crab", "lobster", "shrimp", "squid", "cuttlefish", "nautilus", "snail", "slug", "worm", "caterpillar", "chrysalis", "cocoon", "puppy", "kitten", "bunny", "duckling", "cup of tea", "Saturday morning cartoon"
 ]
 
 CATEGORIES = [
@@ -104,8 +91,8 @@ BODY_PARTS_TRAITS = [
     "curiosity", "patience", "courage", "integrity", "spontaneity",
     "wisdom", "imagination", "intuition", "spirit", "heart", "soul",
     "smile", "energy", "perspective", "outlook", "approach to life",
-    "resting face", "sense of humour", "energy", "unfiltered thoughts", 
-    "spite reserves", "audacity", "willpower", "determination", "unique skills"
+    "resting face", "sense of humour",
+    "energy", "unfiltered thoughts", "spite reserves", "audacity", "willpower", "determination", "unique skills"
 ]
 
 ABSURD_ACHIEVEMENTS = [
@@ -182,7 +169,7 @@ def generate_compliment():
     format_choice = random.randint(1, 3)
     
     if format_choice == 1:
-        # Mad libs style: "You [verb] like [a/an] [adjective] [noun]"
+        # Action format: "You [verb] like [a/an] [adjective] [noun]"
         verb = random.choice(VERBS)
         adjective = random.choice(ADJECTIVES)
         noun = random.choice(NOUNS)
@@ -193,14 +180,14 @@ def generate_compliment():
         return f"You {verb} like {article} {adjective} {noun}"
     
     elif format_choice == 2:
-        # Comparison format: "You're the [adjective] [noun] of [category]"
+        # Identity format: "You're the [adjective] [noun] of [category]"
         adjective = random.choice(ADJECTIVES)
         noun = random.choice(NOUNS)
         category = random.choice(CATEGORIES)
         return f"You're the {adjective} {noun} of {category}"
     
     else:
-        # Direct approach: "Your [adjective] [body part/trait] could [absurd achievement]"
+        # Capability format: "Your [adjective] [body part/trait] could [absurd achievement]"
         adjective = random.choice(ADJECTIVES)
         trait = random.choice(BODY_PARTS_TRAITS)
         achievement = random.choice(ABSURD_ACHIEVEMENTS)
@@ -220,8 +207,15 @@ def check_for_mentions(client, seen_notifications):
             if notification_uri in seen_notifications:
                 continue
             
-            # Only process mentions
-            if notification.reason == "mention":
+            # Process both mentions and quote posts that mention the bot
+            is_mention = notification.reason == "mention"
+            is_quote_with_mention = (
+                notification.reason == "quote" and 
+                hasattr(notification.record, 'text') and 
+                BLUESKY_HANDLE in notification.record.text
+            )
+            
+            if is_mention or is_quote_with_mention:
                 # Don't reply to our own posts
                 if notification.author.handle == BLUESKY_HANDLE:
                     continue
@@ -229,10 +223,16 @@ def check_for_mentions(client, seen_notifications):
                 # Generate a compliment
                 compliment = generate_compliment()
                 
-                # Create reply reference
+                # Create reply reference with proper threading
+                # Check if the mention is itself a reply to preserve thread structure
+                if hasattr(notification.record, 'reply') and notification.record.reply:
+                    root = notification.record.reply.root
+                else:
+                    root = models.create_strong_ref(notification)
+                
                 reply_ref = models.AppBskyFeedPost.ReplyRef(
                     parent=models.create_strong_ref(notification),
-                    root=models.create_strong_ref(notification)
+                    root=root
                 )
                 
                 # Post the reply
