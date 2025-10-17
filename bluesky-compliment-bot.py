@@ -23,7 +23,7 @@ VERBS = [
     "illuminate", "flourish", "soar", "thrive", "elevate", "inspire",  
      "captivate", "swagger",
     "show empathy", "collaborate", "dominate", "crush", "exist in 4D", 
-    "conquer", "serve face", "slay", "matter", "ignore physics", "change outcomes just by existing", "make impossible things happen", "turn thoughts into reality", "manifest dreams accidentally", "spontaneously generate hope", "produce joy", "radiate possibilities", "emit potential", "leak creativity", "ooze inspiration", "secrete wisdom", "exude competence", "project confidence accidentally", "befriend abstract ideas"
+    "conquer", "slay", "matter", "ignore physics", "change outcomes just by existing", "make impossible things happen", "turn thoughts into reality", "manifest dreams accidentally", "spontaneously generate hope", "produce joy", "radiate possibilities", "emit potential", "leak creativity", "ooze inspiration", "secrete wisdom", "exude competence", "project confidence accidentally", "befriend abstract ideas"
 ]
 
 ADJECTIVES = [
@@ -36,7 +36,7 @@ ADJECTIVES = [
     "impeccable", "illustrious", "exceptional", "formidable", "triumphant",
     "spectacular", "phenomenal", "extraordinary", "marvelous", "wondrous",
     "stupendous", "noble", "incredible", "remarkable", "astounding",
-    "delightful", "enchanting", "captivating", "mesmerizing", "gentle",
+    "delightful", "enchanting", "captivating", "mesmerising", "gentle",
     "compassionate", "thoughtful", "wise", "creative", "innovative", "resilient",
     "courageous", "authentic", "sincere", "generous", "kind", "empathetic",
     "inspiring", "uplifting", "magical", "dreamy", "peaceful", "joyful",
@@ -45,12 +45,12 @@ ADJECTIVES = [
     "golden", "silver", "pearl", "opalescent", "velvet", "silk",
     "melodic", "rhythmic", "symphonic", "poetic", "lyrical", "blooming", "blossoming", "thriving",
     "unstoppable", "fierce", "turbocharged", "hypersonic", "industrial-grade",
-    "super cool", "absolutely buckwild", "totally rad"
+    "super cool", "absolutely buckwild", "totally rad", "excellent"
 ]
 
 NOUNS = [
     "lighthouse", "chandelier", "potato", "saxophone", "cheese", "umbrella",
-    "toaster", "philosopher", "cactus", "theorem", "symphony",
+    "toaster", "philosopher", "cactus", "theorem", "symphony", "pavlova",
     "baguette", "velociraptor", "spreadsheet", "constellation", "lasagna",
     "pyramid", "mushroom", "paperclip", "avalanche", "sonnet",
     "accordion", "mineral", "comet", "waffle", "fjord", "nebula", "glacier",
@@ -59,7 +59,7 @@ NOUNS = [
     "treehouse", "crystal", "vinyl record", "telescope", "windmill", "coffee mug",
     "blanket", "carousel", "harmonica", "pottery", "pillow fort", "waterfall",
     "hammock", "quilt", "honeycomb", "terrarium", "music box", "snow globe",
-    "cake", "puzzle", "hot air balloon", "candle", "butterfly", "lullaby", "cryptid", "menace", "legend", "icon", "wizard", "oracle", "sage", "champion", "hero", "warrior", "knight", "dragon", "phoenix", "unicorn", "pegasus", "griffin", "sphinx", "kraken", "leviathan", "titan", "colossus", "behemoth", "chimera", "hydra", "mongoose", "capybara", "otter", "raccoon", "crow", "raven", "owl", "hawk", "falcon", "eagle", "wolf", "fox", "bear", "lion", "tiger", "panther", "leopard", "jaguar", "lynx", "bobcat", "cheetah", "puma", "octopus", "jellyfish", "mantis shrimp", "axolotl", "tardigrade", "platypus", "narwhal", "dolphin", "whale", "shark", "seal", "walrus", "penguin", "flamingo", "peacock", "swan", "hummingbird", "kingfisher", "tortoise", "gecko", "chameleon", "iguana", "komodo dragon", "crocodile", "alligator", "salamander", "newt", "frog", "toad", "bee", "butterfly", "moth", "dragonfly", "firefly", "ladybug", "beetle", "ant", "termite", "spider", "scorpion", "crab", "lobster", "shrimp", "squid", "cuttlefish", "nautilus", "snail", "slug", "worm", "caterpillar", "chrysalis", "cocoon", "puppy", "kitten", "bunny", "duckling", "cup of tea", "Saturday morning cartoon"
+    "cake", "puzzle", "hot air balloon", "candle", "butterfly", "lullaby", "cryptid", "menace", "legend", "icon", "wizard", "oracle", "sage", "champion", "hero", "warrior", "knight", "dragon", "phoenix", "unicorn", "pegasus", "griffin", "sphinx", "kraken", "leviathan", "titan", "colossus", "behemoth", "chimera", "hydra", "mongoose", "capybara", "otter", "raccoon", "crow", "raven", "owl", "hawk", "falcon", "eagle", "wolf", "fox", "bear", "lion", "tiger", "panther", "leopard", "jaguar", "lynx", "bobcat", "cheetah", "puma", "octopus", "jellyfish", "mantis shrimp", "axolotl", "tardigrade", "platypus", "narwhal", "dolphin", "whale", "shark", "seal", "walrus", "penguin", "flamingo", "peacock", "swan", "hummingbird", "kingfisher", "tortoise", "gecko", "chameleon", "iguana", "komodo dragon", "crocodile", "alligator", "salamander", "newt", "frog", "toad", "bee", "butterfly", "moth", "dragonfly", "firefly", "ladybug", "beetle", "ant", "spider", "scorpion", "crab", "lobster", "shrimp", "squid", "cuttlefish", "nautilus", "snail", "slug", "worm", "caterpillar", "chrysalis", "cocoon", "puppy", "kitten", "bunny", "duckling", "cup of tea", "Saturday morning cartoon", "ibis", "bin chicken", "koala"
 ]
 
 CATEGORIES = [
@@ -73,7 +73,7 @@ CATEGORIES = [
     "meaningful connections", "quiet moments", "big dreams", "small joys",
     "rainy afternoons", "sunrise energy", "late night thoughts",
     "adventure", "friendship", "hope", "wonder", "peace",
-    "gentle chaos", "organized fun", "cozy season", "fresh starts",
+    "gentle chaos", "organized fun", "fresh starts",
     "second chances", "self-discovery", "healing",
     "beautiful mistakes", "life lessons", "happy accidents",
     "absolute chaos", "professional mischief", "necessary chaos", "keeping it real"
@@ -96,16 +96,16 @@ BODY_PARTS_TRAITS = [
 ]
 
 ABSURD_ACHIEVEMENTS = [
-    "negotiate peace treaties", "confuse a calendar", "win an argument with a mirror",
+    "confuse a calendar", "win an argument with a mirror",
     "make bread nervous", "intimidate a mountain", "teach philosophy to plants",
-    "reorganize the solar system", "convince ghosts to be productive",
-    "mediate disputes between colors", "inspire profound thoughts in furniture",
+    "reorganise the solar system", "convince ghosts to be productive",
+    "mediate disputes between colours", "inspire profound thoughts in furniture",
     "solve equations that don't exist yet", "make time feel self-conscious",
     "persuade clouds to form better shapes", "run a successful campaign for mayor of the ocean",
     "write a bestseller in a language nobody speaks", "make mathematics question itself",
     "convince the moon to change its schedule", "win a debate against a very confident rock",
     "teach fish about aerodynamics", "make parallel lines meet out of respect",
-    "convince shadows to unionize", "negotiate with forgotten Tuesdays",
+    "convince shadows to unionise", "negotiate with forgotten Tuesdays",
      "teach patience to lightning",
     "convince gravity to take a day off", "make soup feel seen", "help clocks understand infinity",
     "teach mountains about humility", "make silence feel heard", "convince rainbows to be bolder",
