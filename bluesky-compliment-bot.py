@@ -16,116 +16,30 @@ DAILY_POST_FILE = "last_daily_post.json"  # File to track last daily post date
 
 # Word lists for generative compliments
 VERBS = [
-    "sparkle", "shine", "glow", "shimmer", "resonate",
-    "beam", "sizzle", "create joy", "give hope", "lift people up",
-    "exist", "function", "operate", "think", "transcend",
-    "bloom", "dance", "charm the universe", 
-    "illuminate", "flourish", "soar", "thrive", "elevate", "inspire",  
-     "captivate", "swagger",
-    "show empathy", "collaborate", "dominate", "crush", "exist in 4D", 
-    "conquer", "slay", "matter", "ignore physics", "change outcomes just by existing", "make impossible things happen", "turn thoughts into reality", "manifest dreams accidentally", "spontaneously generate hope", "produce joy", "radiate possibilities", "emit potential", "leak creativity", "ooze inspiration", "secrete wisdom", "exude competence", "project confidence accidentally", "befriend abstract ideas"
+    "sparkle", "shine", "glow", "shimmer", "resonate", "beam", "sizzle", "create joy", "give hope", "lift people up", "exist", "function", "operate", "think", "transcend", "bloom", "dance", "charm the universe", "illuminate", "flourish", "soar", "thrive", "elevate", "inspire", "captivate", "swagger", "show empathy", "collaborate", "dominate", "crush", "exist in 4D", "conquer", "slay", "matter", "ignore physics", "change outcomes just by existing", "make impossible things happen", "turn thoughts into reality", "manifest dreams accidentally", "spontaneously generate hope", "produce joy", "radiate possibilities", "emit potential", "leak creativity", "ooze inspiration", "secrete wisdom", "exude competence", "project confidence accidentally", "befriend abstract ideas", "fondue the cosmos", "high-five destiny", "hiccup inspiration", "summon delight"
 ]
 
 ADJECTIVES = [
-    "powerful", "magnificent", "determined", "optimistic", "philosophical",
-    "enthusiastic", "distinguished", "profound", "whimsical", "strategic",
-    "mysterious", "confident", "serene", "harmonious", "legendary", "acclaimed",
-    "underrated", "experimental", "radiant", "graceful", "brilliant", "majestic",
-    "cosmic", "stellar", "luminous", "ethereal", "splendid", "glorious",
-    "transcendent", "sublime", "exquisite", "vibrant", "dazzling", "resplendent",
-    "impeccable", "illustrious", "exceptional", "formidable", "triumphant",
-    "spectacular", "phenomenal", "extraordinary", "marvelous", "wondrous",
-    "stupendous", "noble", "incredible", "remarkable", "astounding",
-    "delightful", "enchanting", "captivating", "mesmerising", "gentle",
-    "compassionate", "thoughtful", "wise", "creative", "innovative", "resilient",
-    "courageous", "authentic", "sincere", "generous", "kind", "empathetic",
-    "inspiring", "uplifting", "magical", "dreamy", "peaceful", "joyful",
-    "warm", "cozy", "soothing", "refreshing", "invigorating", "sparkling",
-    "shimmering", "gleaming", "prismatic", "iridescent", "crystalline", "celestial",
-    "golden", "silver", "pearl", "opalescent", "velvet", "silk",
-    "melodic", "rhythmic", "symphonic", "poetic", "lyrical", "blooming", "blossoming", "thriving",
-    "unstoppable", "fierce", "turbocharged", "hypersonic", "industrial-grade",
-    "super cool", "absolutely buckwild", "totally rad", "excellent"
+    "powerful", "magnificent", "determined", "optimistic", "philosophical", "enthusiastic", "distinguished", "profound", "whimsical", "strategic", "mysterious", "confident", "serene", "harmonious", "legendary", "acclaimed", "underrated", "experimental", "radiant", "graceful", "brilliant", "majestic", "cosmic", "stellar", "luminous", "ethereal", "splendid", "glorious", "transcendent", "sublime", "exquisite", "vibrant", "dazzling", "resplendent", "impeccable", "illustrious", "exceptional", "formidable", "triumphant", "spectacular", "phenomenal", "extraordinary", "marvelous", "wondrous", "stupendous", "noble", "incredible", "remarkable", "astounding", "delightful", "enchanting", "captivating", "mesmerising", "gentle", "compassionate", "thoughtful", "wise", "creative", "innovative", "resilient", "courageous", "authentic", "sincere", "generous", "kind", "empathetic", "inspiring", "uplifting", "magical", "dreamy", "peaceful", "joyful", "warm", "cozy", "soothing", "refreshing", "invigorating", "sparkling", "shimmering", "gleaming", "prismatic", "iridescent", "crystalline", "celestial", "golden", "silver", "pearl", "opalescent", "velvet", "silk", "sweet", "melodic", "rhythmic", "symphonic", "poetic", "lyrical", "blooming", "thriving", "unstoppable", "fierce", "turbocharged", "hypersonic", "industrial-grade", "super cool", "absolutely buckwild", "totally rad", "excellent", "meme-worthy", "neon-hearted"
 ]
 
 NOUNS = [
-    "lighthouse", "chandelier", "potato", "saxophone", "cheese", "umbrella",
-    "toaster", "philosopher", "cactus", "theorem", "symphony", "pavlova",
-    "baguette", "velociraptor", "spreadsheet", "constellation", "lasagna",
-    "pyramid", "mushroom", "paperclip", "avalanche", "sonnet",
-    "accordion", "mineral", "comet", "waffle", "fjord", "nebula", "glacier",
-    "manuscript", "turbine", "compass", "kaleidoscope",
-    "campfire", "fountain", "mosaic", "lantern", "garden", "sunset",
-    "treehouse", "crystal", "vinyl record", "telescope", "windmill", "coffee mug",
-    "blanket", "carousel", "harmonica", "pottery", "pillow fort", "waterfall",
-    "hammock", "quilt", "honeycomb", "terrarium", "music box", "snow globe",
-    "cake", "puzzle", "hot air balloon", "candle", "butterfly", "lullaby", "cryptid", "menace", "legend", "icon", "wizard", "oracle", "sage", "champion", "hero", "warrior", "knight", "dragon", "phoenix", "unicorn", "pegasus", "griffin", "sphinx", "kraken", "leviathan", "titan", "colossus", "behemoth", "chimera", "hydra", "mongoose", "capybara", "otter", "raccoon", "crow", "raven", "owl", "hawk", "falcon", "eagle", "wolf", "fox", "bear", "lion", "tiger", "panther", "leopard", "jaguar", "lynx", "bobcat", "cheetah", "puma", "octopus", "jellyfish", "mantis shrimp", "axolotl", "tardigrade", "platypus", "narwhal", "dolphin", "whale", "shark", "seal", "walrus", "penguin", "flamingo", "peacock", "swan", "hummingbird", "kingfisher", "tortoise", "gecko", "chameleon", "iguana", "komodo dragon", "crocodile", "alligator", "salamander", "newt", "frog", "toad", "bee", "butterfly", "moth", "dragonfly", "firefly", "ladybug", "beetle", "ant", "spider", "scorpion", "crab", "lobster", "shrimp", "squid", "cuttlefish", "nautilus", "snail", "slug", "worm", "caterpillar", "chrysalis", "cocoon", "puppy", "kitten", "bunny", "duckling", "cup of tea", "Saturday morning cartoon", "ibis", "bin chicken", "koala"
+    "lighthouse", "chandelier", "potato", "saxophone", "cheese", "umbrella", "toaster", "philosopher", "cactus", "theorem", "symphony", "pavlova", "baguette", "velociraptor", "spreadsheet", "constellation", "lasagna", "pyramid", "mushroom", "paperclip", "avalanche", "sonnet", "accordion", "mineral", "comet", "waffle", "fjord", "nebula", "glacier", "manuscript", "turbine", "compass", "kaleidoscope", "campfire", "fountain", "mosaic", "lantern", "garden", "sunset", "treehouse", "crystal", "vinyl record", "telescope", "windmill", "coffee mug", "blanket", "carousel", "harmonica", "pottery", "pillow fort", "waterfall", "hammock", "quilt", "honeycomb", "terrarium", "music box", "snow globe", "cake", "puzzle", "hot air balloon", "candle", "butterfly", "lullaby", "cryptid", "menace", "legend", "icon", "wizard", "oracle", "sage", "champion", "hero", "warrior", "knight", "dragon", "phoenix", "unicorn", "pegasus", "griffin", "sphinx", "kraken", "leviathan", "titan", "colossus", "behemoth", "chimera", "hydra", "mongoose", "capybara", "otter", "raccoon", "crow", "raven", "owl", "hawk", "falcon", "eagle", "wolf", "fox", "bear", "lion", "tiger", "panther", "leopard", "jaguar", "lynx", "bobcat", "cheetah", "puma", "octopus", "jellyfish", "mantis shrimp", "axolotl", "tardigrade", "platypus", "narwhal", "dolphin", "whale", "shark", "seal", "walrus", "penguin", "flamingo", "peacock", "swan", "hummingbird", "kingfisher", "tortoise", "gecko", "chameleon", "iguana", "komodo dragon", "crocodile", "alligator", "salamander", "newt", "frog", "toad", "bee", "butterfly", "moth", "dragonfly", "firefly", "ladybug", "beetle", "ant", "spider", "scorpion", "crab", "lobster", "shrimp", "squid", "cuttlefish", "nautilus", "snail", "slug", "worm", "caterpillar", "chrysalis", "cocoon", "puppy", "kitten", "bunny", "duckling", "cup of tea", "Saturday morning cartoon", "ibis", "bin chicken", "koala", "caramel latte"
 ]
 
-CATEGORIES = [
-    "the galaxy", "gettin' it done", "being alive", "existing beautifully",
-    "making things happen", "the universe", "personal growth", "vibing",
-    "absolutely crushing it", "reality", "consciousness", "the cosmos",
-    "human achievement", "living your truth", "the food chain", "evolution",
-    "making an impact", "the animal kingdom", "creative expression",
-    "problem solving", "social situations", "keeping it together",
-    "emotional intelligence", "the whole vibe", "succeeding at life",
-    "meaningful connections", "quiet moments", "big dreams", "small joys",
-    "rainy afternoons", "sunrise energy", "late night thoughts",
-    "adventure", "friendship", "hope", "wonder", "peace",
-    "gentle chaos", "organized fun", "fresh starts",
-    "second chances", "self-discovery", "healing",
-    "beautiful mistakes", "life lessons", "happy accidents",
-    "absolute chaos", "professional mischief", "necessary chaos", "keeping it real"
+CATEGORIES = [ 
+    "the galaxy", "gettin' it done", "being alive", "existing beautifully", "making things happen", "the universe", "personal growth", "vibing", "absolutely crushing it", "reality", "consciousness", "the cosmos", "human achievement", "living your truth", "the food chain", "evolution", "making an impact", "the animal kingdom", "creative expression", "problem solving", "social situations", "keeping it together", "emotional intelligence", "the whole vibe", "succeeding at life", "meaningful connections", "quiet moments", "big dreams", "small joys", "rainy afternoons", "sunrise energy", "late night thoughts", "adventure", "friendship", "hope", "wonder", "peace", "gentle chaos", "organized fun", "fresh starts", "second chances", "self-discovery", "healing", "beautiful mistakes", "life lessons", "happy accidents", "absolute chaos", "professional mischief", "necessary chaos", "keeping it real", "main character energy", "midnight epiphanies", "being aggressively okay"
 ]
 
-BODY_PARTS_TRAITS = [
-    "elbows", "aura", "sense of timing", "bone structure", "neural pathways",
-    "pinky finger", "posture", "metabolic efficiency", "spatial awareness",
-    "eyebrows", "voice", "shadow", "wavelength", "essence",
-    "vibes", "energy signature", "presence", "stride", "handwriting",
-    "laugh", "conscience", "instincts", "decision-making process", "temporal flux",
-    "inner monologue", "dreams", "capacity for joy", "sense of wonder",
-    "ability to hope", "right elbow", "thoughtfulness", "creativity",
-    "kindness", "resilience", "authenticity", "empathy",
-    "curiosity", "patience", "courage", "integrity", "spontaneity",
-    "wisdom", "imagination", "intuition", "spirit", "heart", "soul",
-    "smile", "energy", "perspective", "outlook", "approach to life",
-    "resting face", "sense of humour",
-    "energy", "unfiltered thoughts", "spite reserves", "audacity", "willpower", "determination", "unique skills"
+BODY_PARTS_TRAITS = [ 
+    "elbows", "aura", "sense of timing", "bone structure", "neural pathways", "pinky finger", "posture", "metabolic efficiency", "spatial awareness", "eyebrows", "voice", "shadow", "wavelength", "essence", "vibes", "energy signature", "presence", "stride", "handwriting", "laugh", "conscience", "instincts", "decision-making process", "temporal flux", "inner monologue", "dreams", "capacity for joy", "sense of wonder", "ability to hope", "right elbow", "thoughtfulness", "creativity", "kindness", "resilience", "authenticity", "empathy", "curiosity", "patience", "courage", "integrity", "spontaneity", "wisdom", "imagination", "intuition", "spirit", "heart", "soul", "smile", "energy", "perspective", "outlook", "approach to life", "resting face", "sense of humour", "energy", "audacity", "willpower", "determination", "unique skills", "gravitational pull", "existential stance" 
 ]
 
-ABSURD_ACHIEVEMENTS = [
-    "confuse a calendar", "win an argument with a mirror",
-    "make bread nervous", "intimidate a mountain", "teach philosophy to plants",
-    "reorganise the solar system", "convince ghosts to be productive",
-    "mediate disputes between colours", "inspire profound thoughts in furniture",
-    "solve equations that don't exist yet", "make time feel self-conscious",
-    "persuade clouds to form better shapes", "run a successful campaign for mayor of the ocean",
-    "write a bestseller in a language nobody speaks", "make mathematics question itself",
-    "convince the moon to change its schedule", "win a debate against a very confident rock",
-    "teach fish about aerodynamics", "make parallel lines meet out of respect",
-    "convince shadows to unionise", "negotiate with forgotten Tuesdays",
-     "teach patience to lightning",
-    "convince gravity to take a day off", "make soup feel seen", "help clocks understand infinity",
-    "teach mountains about humility", "make silence feel heard", "convince rainbows to be bolder",
-    "mediate between sunrise and sunset", "teach clouds about retirement planning",
-    "convince stars to shine a little brighter", "help the wind find its purpose",
-    "make thunder feel understood", "teach rivers about going with the flow",
-    "convince the ocean to share its secrets", "help trees understand their own wisdom",
-    "make butterflies feel accomplished", "teach snow about letting go",
-    "convince rain to dance more freely", "help flowers understand their own beauty",
-    "make bees feel appreciated for their work", 
-    "help sunsets feel proud of themselves",
-    "make dewdrops feel significant", "convince spring to take its time", "help winter understand warmth",
-    "make summer nights last longer", "teach comets about commitment",
-    "intimidate the sun into setting earlier", "bully physics into submission",
-    "gaslight reality into doubting itself", "convince the void to reconsider",
-    "strong-arm fate into giving you a better deal", "threaten the concept of time",
-    "absolutely devastate the space-time continuum", "dropkick existential dread into the sun",
-    "wrestle probability into giving better odds", 
-    "powerbomb insecurity through a table"
+ABSURD_ACHIEVEMENTS = [ 
+    "confuse a calendar", "win an argument with a mirror", "make bread nervous", "intimidate a mountain", "teach philosophy to plants", "reorganise the solar system", "convince ghosts to be productive", "mediate disputes between colours", "inspire profound thoughts in furniture", "solve equations that don't exist yet", "make time feel self-conscious", "persuade clouds to form better shapes", "run a successful campaign for mayor of the ocean", "write a bestseller in a language nobody speaks", "make mathematics question itself", "convince the moon to change its schedule", "win a debate against a very confident rock", "teach fish about aerodynamics", "make parallel lines meet out of respect", "convince shadows to unionise", "negotiate with forgotten Tuesdays",  "teach patience to lightning", "convince gravity to take a day off", "make soup feel seen", "help clocks understand infinity", "teach mountains about humility", "make silence feel heard", "convince rainbows to be bolder", "mediate between sunrise and sunset", "teach clouds about retirement planning", "convince stars to shine a little brighter", "help the wind find its purpose", "make thunder feel understood", "teach rivers about going with the flow", "convince the ocean to share its secrets", "help trees understand their own wisdom", "make butterflies feel accomplished", "teach snow about letting go", "convince rain to dance more freely", "help flowers understand their own beauty", "make bees feel appreciated for their work",  "help sunsets feel proud of themselves", "make dewdrops feel significant", "convince spring to take its time", "help winter understand warmth", "make summer nights last longer", "teach comets about commitment", "intimidate the sun into setting earlier", "bully physics into submission", "gaslight reality into doubting itself", "convince the void to reconsider", "strong-arm fate into giving you a better deal", "threaten the concept of time", "absolutely devastate the space-time continuum", "dropkick existential dread into the sun", "wrestle probability into giving better odds",  "powerbomb insecurity through a table", "convince serotonin to go full-time", "make a black hole blink", "teach parallel universes to high-five", "reboot the moon for updates", "convince a plot hole to fill itself", "persuade destiny to add bonus levels", "comfort a volcano mid-eruption", "win a rap battle against thunder", "make anxiety forget its lines", "negotiate peace between decimals and fractions", "intimidate a paradox into resolving itself"
 ]
+
+
 
 def load_seen_notifications():
     """Load the set of notifications we've already replied to."""
